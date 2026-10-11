@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-burgundy: #4A0914;
+  --secondary-burgundy: #701D32;
+  --champagne-beige: #D8C3A5;
+  --warm-beige: #E8D8C3;
+  --soft-ivory: #F8F3EC;
+  --muted-gold: #C7A476;
+  --dark-espresso: #281B1B;
+  --muted-text: #806F6B;
+  --positive-green: #39755C;
+  --warning-amber: #C58A3D;
+  --danger-red: #B94A52;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--soft-ivory);
+  color: var(--dark-espresso);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Luxury satin backdrop subtle styling */
+.satin-accent-subtle {
+  background: radial-gradient(circle at 85% 15%, rgba(216, 195, 165, 0.28) 0%, rgba(248, 243, 236, 0) 65%),
+              radial-gradient(circle at 10% 90%, rgba(112, 29, 50, 0.05) 0%, rgba(248, 243, 236, 0) 50%);
+}
+
+.luxury-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(216, 195, 165, 0.35);
+  box-shadow: 0 10px 25px -8px rgba(74, 9, 20, 0.05), 0 4px 10px -2px rgba(40, 27, 27, 0.02);
+  border-radius: 18px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card:hover {
+  border-color: rgba(199, 164, 118, 0.55);
+  box-shadow: 0 16px 32px -10px rgba(74, 9, 20, 0.09), 0 6px 14px -2px rgba(40, 27, 27, 0.04);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F3EC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8C3A5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C7A476;
+}
+
+/* Glassmorphism accents */
+.glass-burgundy {
+  background: rgba(74, 9, 20, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-header {
+  background: rgba(248, 243, 236, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
